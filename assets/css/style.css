@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    font-family: "Orbitron", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 2rem;
+    background-image: linear-gradient(to top, #1a92ad,#70d4ea);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip: cover;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #3f3f3f;
+    width: 750px;
+    padding: 1.2rem;
+    margin: 0 auto;
+    border-radius: 50px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0 3px 5px 1px rgba(0, 0, 0, 0.553);
+
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hours, .minutes, .seconds{
+    display: flex;
+    font-weight: 500;
+    padding-right: 15px;
+    min-width: 50px;
+    color: #1dd3fc;
+    font-size: 2rem;
+
+}
+
+.separator{
+    padding-right: 15px;
+    color: #1dd3fc;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+.userIn{
+    display: none;
+    text-decoration: none;
+    border: none;
+    background-color: #1a92ad;
+    min-width: 50px;
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.menu button{
+    text-decoration: none;
+    border: none;
+    font-size: .8rem;
+    border-radius: 50px;
+    min-width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    margin: 1rem;
+    opacity: .8;
+}
+
+.startBtn{
+    background-color: #21d9bd;
+    color: #fff;
+}
+
+.menu button:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.resetBtn, .stopBtn, .restartBtn{
+    display: none;
+}
+
+
+@media screen and (max-width:735px){
+    .content{
+        width: 300px;
+        min-height: 100px;
+        justify-content: center;
+    }
+    .hours, .minutes,.seconds{
+        font-size: 1rem;
+        min-width: 30px;
+    }
+    .separator{
+        font-size: 2rem;
+    }
+    .menu{
+        margin: .5rem;
+    }
+}
