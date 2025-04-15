@@ -8,15 +8,16 @@
 
 body{
     padding: 2rem;
-    background-image: linear-gradient(to top, #1a92ad,#70d4ea);
+    /* background-image: linear-gradient(to top, #1a92ad,#70d4ea); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-clip: cover;
+    background-color: #1f1f1f;
 }
 .content{
     display: flex;
     flex-direction: column;
-    background-color: #3f3f3f;
+    background-color: #2f2f2f;
     width: 750px;
     padding: 1.2rem;
     margin: 0 auto;
@@ -38,11 +39,12 @@ body{
     display: flex;
     font-weight: 500;
     padding-right: 15px;
-    min-width: 50px;
+    min-width: 100px;
     color: #1dd3fc;
     font-size: 2rem;
-
+    text-align: center;
 }
+
 
 .separator{
     padding-right: 15px;
