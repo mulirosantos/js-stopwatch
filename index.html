@@ -11,27 +11,24 @@
 </head>
 <body>
     <div class="content">
-        <div class="timer">
+        <div class="stopwatch">
             <div class="hours">
                 <h1 id="hour"> 00 </h1>
-                <input type="text" class="userIn" id="hourIn">
             </div>
 
             <div class="separator">:</div>
 
             <div class="minutes">
                 <h1 id="minutes"> 00 </h1>
-                <input type="text" class="userIn" id="minIn">
             </div>
 
             <div class="separator">:</div>
 
             <div class="seconds">
                 <h1 id="seconds"> 00 </h1>
-                <input type="text" class="userIn" id="secIn">
             </div>
-    
         </div>
+
         <div class="menu">
             <div class="start">
                 <button class="startBtn"><i class="fa-solid fa-play"></i></button>
@@ -44,6 +41,34 @@
             </div>
             <div class="restart">
                 <button class="restartBtn"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+        </div>
+        <div class="world-menu">
+            <div class="stopwatch-menu">
+                <button class="stopwatchBtn">StopWatch</button>
+            </div>
+            <div class="timer-menu">
+                <button class="timerBtn">Timer</button>
+            </div>
+        </div>
+        <div class="menu-timer hide">
+            <div class="downten">
+                <button class="subTenBtn"> -10:00 </button>
+            </div>
+            <div class="downfive">
+                <button class="subFiveBtn"> -5:00 </button>
+            </div>
+            <div class="downone">
+                <button class="subOneBtn"> -1:00 </button>
+            </div>
+            <div class="upone">
+                <button class="addOneBtn"> +1:00</button>
+            </div>
+            <div class="upfive">
+                <button class="addFiveBtn"> +5:00 </button>
+            </div>
+            <div class="upten">
+                <button class="addTenBtn"> +10:00 </button>
             </div>
         </div>
     </div>

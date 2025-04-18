@@ -29,7 +29,7 @@ body{
 
 }
 
-.timer{
+.stopwatch{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +62,7 @@ body{
     min-width: 50px;
 }
 
-.menu{
+.menu, .world-menu, .menu-timer{
     width: 80%;
     display: flex;
     justify-content: center;
@@ -70,8 +70,13 @@ body{
     margin-top: 1rem;
 
 }
+.menu-timer button{
+    margin: .5rem;
+    min-width: 70px;
+    font-size: .7rem;
+}
 
-.menu button{
+button{
     text-decoration: none;
     border: none;
     font-size: .8rem;
@@ -89,7 +94,11 @@ body{
     color: #fff;
 }
 
-.menu button:hover{
+button:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.world-menu button:hover{
     transform: scale(1.1);
     opacity: 1;
 }
@@ -99,6 +108,42 @@ body{
 }
 
 
+
+input{
+    border:none;
+    background-color: transparent;
+    caret-color: #1dd3fc;
+    color: #1dd3fc;
+    text-align: center;
+    width: 100px;
+    min-height: 50px;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+input:focus{
+    outline: none;
+}
+
+#inphours, #inpminutes, #inpsecond{
+    display: flex;
+    padding-right: 15px;
+    color: #1dd3fc;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.hide{
+    display: none;
+}
+
+button.selected{
+    color: #1dd3fc;
+    background-color: #1f1f1f;
+}
 @media screen and (max-width:735px){
     .content{
         width: 300px;
