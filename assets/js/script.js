@@ -210,12 +210,21 @@ function addTime(time){
 function subTime(time){
     time = time.currentTarget.myParam
     if(minutes === 0){
-        window.alert("Não é possível utilizar valores negativos!")
+        if(hours === 0){
+            window.alert("Não é possível utilizar valores negativos!")
+
+        }else{
+            hours --
+            minutes = 60
+            minutes -= time
+        
+        }
     }else{
         
         minutes -= time
-        minEl.textContent = formatTime(minutes)
     }
+    hourEl.textContent = formatTime(hours)
+    minEl.textContent = formatTime(minutes)
 }
 
 
